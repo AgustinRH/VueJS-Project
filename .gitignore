@@ -1,24 +1,79 @@
+# Logs
 *.log
-.DS_Store
+logs/
+
+# Environment files
 .env
 .env.backup
 .env.production
+.env.*.backup
+
+# IDE & Editor settings
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
 .phpactor.json
-.phpunit.result.cache
 /.fleet
-/.idea
 /.nova
-/.phpunit.cache
-/.vscode
 /.zed
+*.swp
+*.swo
+*~
+
+# PHP & Laravel
+/vendor
 /auth.json
+.phpunit.result.cache
+/.phpunit.cache
+storage/*.key
+/storage/pail
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/testing/*
+
+# Frontend
 /node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm
+dist/
 /public/build
 /public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
+
+# Build artifacts
+/public/css/
+/public/js/
+
+# Database
+database/database.sqlite
+database/database.sqlite-journal
+
+# Testing
+/coverage/
+/.coverage
+
+# Homestead
 Homestead.json
 Homestead.yaml
-Thumbs.db
+
+# Local development
+.editorconfig
+.env.local
+.env.*.local
+.DS_Store/
+
+# OS files
+*.pem
+*.key
+
+# Misc
+*.bak
+*.swp
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
