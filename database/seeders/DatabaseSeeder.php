@@ -14,12 +14,16 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      */
     public function run(): void
-    {
-        // User::factory(10)->create();
+{
+    $course = \App\Models\Course::create([
+        'name' => 'Desarrollo Web',
+        'description' => 'Fullstack Laravel & Vue'
+    ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-    }
+    \App\Models\Student::create([
+        'name' => 'Usuario Prueba',
+        'email' => 'test@example.com',
+        'course_id' => $course->id
+    ]);
+}
 }
