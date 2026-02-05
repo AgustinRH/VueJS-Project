@@ -17,7 +17,7 @@
         </td>
         <td class="p-2 text-right">
           <button @click="$emit('editar', s)" class="text-blue-500 mr-2">Editar</button>
-          <button @click="borrar(s.id)" class="text-red-500">X</button>
+          <button @click="borrar(s.id)" class="text-red-500">Eliminar</button>
         </td>
       </tr>
     </tbody>

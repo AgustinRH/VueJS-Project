@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mb-2 font-bold text-lg text-indigo-700">
-      Total Alumnos Global: {{ totalAlumnos }} </div>
+      Total Alumnos: {{ totalAlumnos }} </div>
     <ul class="border-t pt-2">
       <li v-for="c in courses" :key="c.id" class="mb-2 flex justify-between bg-white p-2 shadow-sm">
         <span><strong>{{ c.name }}</strong> ({{ c.students?.length || 0 }} alumnos)</span>
