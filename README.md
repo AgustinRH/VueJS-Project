@@ -416,28 +416,6 @@ npm run preview               # Vista previa de build
 
 ---
 
-## 🚨 Solución de Problemas
-
-### Error de permisos en storage/
-```bash
-chmod -R 775 storage/
-chmod -R 775 bootstrap/cache/
-```
-
-### Limpiar caché
-```bash
-php artisan cache:clear
-php artisan config:clear
-php artisan view:clear
-```
-
-### Regenerar autoloader
-```bash
-composer dump-autoload
-```
-
----
-
 ## 📝 Licencia
 
 Este proyecto está bajo la licencia MIT. Ver archivo LICENSE para más detalles.
